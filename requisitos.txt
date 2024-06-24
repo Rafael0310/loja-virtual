@@ -1,0 +1,9 @@
+Desafio: Sistema de Loja Virtual
+
+Objetivo: Criar um sistema para gerenciar pedidos de uma loja virtual.
+
+Requisitos:
+
+Crie uma classe Produto com atributos: nome, preço, estoque e método para adicionar os produtos.
+Crie uma classe Pedido com atributos: lista de produtos, quantidade e método para calcular o total do pedido.
+Crie uma classe Cliente com atributos: cpf, nome, endereço e método para realizar pedidos.
