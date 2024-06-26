@@ -1,3 +1,5 @@
+import os
+
 from cliente import Cliente
 from produto import Produto
 from pedido import Pedido
@@ -14,11 +16,11 @@ ____________________________________\n
 ____________________________________\n
 ''')
     try:
-        opcao = int(input('O que deseja fazer?'))
+        opcao = int(input('O que deseja fazer? '))
 
         match opcao:
             case 1:
-                pass
+                Cliente.cadastrar_cliente()
 
             case 2:
                 pass
@@ -27,6 +29,7 @@ ____________________________________\n
                 pass
 
             case 4:
+                os.system('cls' if os.name == 'nt' else 'clear')
                 print('Encerrando...')
                 quit()
 
@@ -35,5 +38,3 @@ ____________________________________\n
                 
     except ValueError:
         print('Por favor, insira um valor inteiro.')
-    except:
-        print('Erro inesperado, tente novamente.')
