@@ -23,7 +23,7 @@ ____________________________________\n
                 Cliente.cadastrar_cliente()
 
             case 2:
-                pass
+                Produto.fluxo_produto()
 
             case 3:
                 pass
