@@ -6,14 +6,14 @@ from pedido import Pedido
 
 while True:
     print('''
-____________________________________\n
-            Loja Virtual
-____________________________________\n
-        1 - Cadastrar cliente
-        2 - Cadastrar produto
-        3 - Fazer um pedido
-        4 - Sair
-____________________________________\n
+______________________________________________________\n
+                    Loja Virtual
+______________________________________________________\n
+                1 - Cadastrar cliente
+                2 - Cadastrar produto
+                3 - Fazer um pedido
+                4 - Sair
+______________________________________________________\n
 ''')
     try:
         opcao = int(input('O que deseja fazer? '))
@@ -26,7 +26,7 @@ ____________________________________\n
                 Produto.fluxo_produto()
 
             case 3:
-                pass
+                Pedido.checar_listas()
 
             case 4:
                 os.system('cls' if os.name == 'nt' else 'clear')

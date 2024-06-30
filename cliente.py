@@ -22,36 +22,36 @@ class Cliente:
 
             try:
                 cpf = input('''
-____________________________________\n
- Digite o CPF do cliente: ''')
+______________________________________________________\n
+              Digite o CPF do cliente: ''')
                 
                 validar_cpf(cpf)
 
                 # Verifica se o cliente já foi cadastrado
                 if any(cliente.cpf == cpf for cliente in lista_clientes):
                     print('''
-____________________________________\n
- Esse cliente já foi cadastrado.
-____________________________________''')
+______________________________________________________\n
+            Esse cliente já foi cadastrado.
+______________________________________________________''')
 
                 else:
                     nome = input('''
-____________________________________\n
- Digite o nome do cliente: ''')
+______________________________________________________\n
+              Digite o nome do cliente: ''')
                     
                     endereco = input('''
-____________________________________\n
- Digite o endereço do cliente: ''')
+______________________________________________________\n
+              Digite o endereço do cliente: ''')
 
                     lista_clientes.append(Cliente(cpf=cpf, nome=nome, endereco=endereco))
                     print(f'''
-____________________________________\n
-      Novo cliente cadastrado!
-____________________________________\n
-    CPF: {lista_clientes[-1].cpf}
-    Nome: {lista_clientes[-1].nome}
-    Endereço: {lista_clientes[-1].endereco}
-____________________________________\n''')
+______________________________________________________\n
+                Novo cliente cadastrado!
+______________________________________________________\n
+        CPF: {lista_clientes[-1].cpf}
+        Nome: {lista_clientes[-1].nome}
+        Endereço: {lista_clientes[-1].endereco}
+______________________________________________________\n''')
 
             except ValueError:
                 print('\n          CPF inválido!')

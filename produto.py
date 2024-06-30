@@ -17,22 +17,22 @@ class Produto:
     @staticmethod
     def novo_produto(nome):
         print('''
-____________________________________\n
-      Registrar um novo pedido
-____________________________________\n''')
+______________________________________________________\n
+                Registrar um novo pedido
+______________________________________________________\n''')
         
         try:
             valor = float(input(' Insira o valor do produto: R$'))
             qntd = int(input(' Insira a quantidade do produto: '))
             lista_produtos.append(Produto(nome=nome, valor=valor, qntd=qntd))
             print(f'''
-____________________________________\n
-    Novo produto cadastrado
-____________________________________\n
-        Produto: {lista_produtos[-1].nome}
-        Valor: R${lista_produtos[-1].valor}
-        Estoque: {lista_produtos[-1].qntd}
-____________________________________\n''')
+______________________________________________________\n
+                Novo produto registrado
+______________________________________________________\n
+                Produto: {lista_produtos[-1].nome}
+                Valor: R${lista_produtos[-1].valor}
+                Estoque: {lista_produtos[-1].qntd}
+______________________________________________________\n''')
                         
         except:
             print('\n Por favor, insira valores válidos.\n')
@@ -54,13 +54,13 @@ ____________________________________\n''')
                     produto.qntd += qntd
 
                     print(f'''
-____________________________________\n
-    Novo produto cadastrado
-____________________________________\n
-        Produto: {produto.nome}
-        Valor: R${produto.valor}
-        Estoque: {produto.qntd}
-____________________________________\n''')
+______________________________________________________\n
+                  Estoque alimentado
+______________________________________________________\n
+                Produto: {produto.nome}
+                Valor: R${produto.valor}
+                Estoque: {produto.qntd}
+______________________________________________________\n''')
                     break
 
                 except ValueError:
