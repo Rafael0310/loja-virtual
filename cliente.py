@@ -23,7 +23,7 @@ class Cliente:
             try:
                 cpf = input('''
 ______________________________________________________\n
-              Digite o CPF do cliente: ''')
+            Digite o CPF do cliente: ''')
                 
                 validar_cpf(cpf)
 
@@ -37,24 +37,24 @@ ______________________________________________________''')
                 else:
                     nome = input('''
 ______________________________________________________\n
-              Digite o nome do cliente: ''')
+            Digite o nome do cliente: ''')
                     
                     endereco = input('''
 ______________________________________________________\n
-              Digite o endereço do cliente: ''')
+            Digite o endereço do cliente: ''')
 
                     lista_clientes.append(Cliente(cpf=cpf, nome=nome, endereco=endereco))
                     print(f'''
 ______________________________________________________\n
                 Novo cliente cadastrado!
 ______________________________________________________\n
-        CPF: {lista_clientes[-1].cpf}
-        Nome: {lista_clientes[-1].nome}
-        Endereço: {lista_clientes[-1].endereco}
+                CPF: {lista_clientes[-1].cpf}
+                Nome: {lista_clientes[-1].nome}
+                Endereço: {lista_clientes[-1].endereco}
 ______________________________________________________\n''')
 
             except ValueError:
-                print('\n          CPF inválido!')
+                print('\n                   CPF inválido!')
             
             finally:
                 if not continuar():

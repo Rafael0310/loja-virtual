@@ -11,10 +11,11 @@ def validar_cpf(cpf):
 def continuar():
     while True:
         try:
-            opcao = int(input(''' 
- Deseja continuar?
- 1 - Sim
- 2 - Não
+            opcao = int(input('''
+                  Deseja continuar?\n
+                      1 - Sim
+                      2 - Não
+______________________________________________________
  '''))
             
             match opcao:
@@ -23,7 +24,7 @@ def continuar():
                 case 2:
                     return False
                 case _:
-                    print('Opção inválida! Tente novamente.')
+                    print(' Opção inválida! Tente novamente.')
 
         except ValueError:
-            print('Por favor, insira um valor inteiro.')
+            print(' Por favor, insira um valor inteiro.')

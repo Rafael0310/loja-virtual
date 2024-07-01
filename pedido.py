@@ -71,7 +71,7 @@ class Pedido:
                             print(f'''______________________________________________________\n
     Produto: {produto.nome} - Preço: R${produto.valor} - Estoque: {produto.qntd}''')
 
-                        item = input('\n Digite o nome do produto que deseja comprar\n 0 - Fechar a compra\n')
+                        item = input('______________________________________________________\n\n Digite o nome do produto que deseja comprar\n 0 - Fechar a compra\n ')
             
                         # se item for diferente de 0, significa que o usuário ainda não deseja finalizar a compra
                         if not item == '0':
@@ -103,10 +103,10 @@ ______________________________________________________\n''')
                                     if produto.nome == item:
                                         valor_total += produto.valor * qntd
                                         produto.qntd -= qntd
-                                        print(f' Produto: {produto.nome} - Valor: {produto.valor} - Estoque: {produto.qntd}')
+                                        print(f' Produto: {produto.nome} - Valor: {produto.valor} - Quantidade: {qntd}')
+                                        print('______________________________________________________')
                                         
-                                        
-                            print(f'\n Valor total: {valor_total}')
+                            print(f'\n              Valor total: {valor_total}')
                             break
 
             except:
