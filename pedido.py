@@ -15,7 +15,7 @@ itens_pedido = {}
 
 @dataclass
 class Pedido:
-    itens_pedido: []
+    itens_pedido: list
     quantidade: int
 
     def checar_listas():
@@ -106,7 +106,7 @@ ______________________________________________________\n''')
                                         print(f' Produto: {produto.nome} - Valor: {produto.valor} - Quantidade: {qntd}')
                                         print('______________________________________________________')
                                         
-                            print(f'\n              Valor total: {valor_total}')
+                            print(f'\n                  Valor total: {valor_total}')
                             break
 
             except:
